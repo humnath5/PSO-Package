@@ -1,0 +1,16 @@
+
+#!/bin/bash
+#$ -V
+#$ -cwd
+#$ -j y
+#$ -S /bin/bash
+#$ -N mpipsofit
+#$ -M hum.n.bhandari@ttu.edu # email for notification
+#$ -o $JOB_NAME.o$JOB_ID
+#$ -e $JOB_NAME.e$JOB_ID
+#$ -q normal
+#$ -pe fill 12
+#$ -m be        # Email at Begin and End of job
+#$ -l h_rt=01:30:00     # Run time (hh:mm:ss) - 1.5 hours
+#$ -P hrothgar #lones
+mpirun -np 12 --machinefile machinefile.$JOB_ID ./mpipsofit poten_fitting 50 18 500 10 0 143 44

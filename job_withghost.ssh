@@ -1,0 +1,9 @@
+#!/bin/bash
+#$ -V
+#$ -cwd
+#$ -j y
+#$ -S /bin/bash
+#$ -N withghost
+#$ -q serial
+#$ -P hostname	
+./withghost fit_withghost 50 25 500 10 0

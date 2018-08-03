@@ -1,0 +1,22 @@
+
+ PSO parameters used:
+seed1:20954
+seed2:12018
+nd:10
+np:50
+ni:500
+maxRun:20
+Elapsed time:0.000000
+best value: 0.000104
+
+ Optimal parameters(gbest)
+0.999966
+0.999932
+0.999863
+0.999726
+0.999450
+0.998898
+0.997792
+0.995579
+0.991157
+0.982392

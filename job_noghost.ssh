@@ -1,0 +1,9 @@
+#!/bin/bash
+#$ -V
+#$ -cwd
+#$ -j y
+#$ -S /bin/bash
+#$ -N noghost
+#$ -q serial
+#$ -P hostname
+./noghost fit_noghost 50 16 500 10 0 
